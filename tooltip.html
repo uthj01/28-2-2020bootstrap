@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tooltip</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">tooltip on top</button>
+
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"title="Tooltip on bottom">tooltip on bottom</button>
+
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">tooltip on right</button> 
+
+		<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">tooltip on left</button>
+	</div>
+	<br><br>
+
+	<img src="images/ff.jpg" width="20%" alt="abc" class="rounded float-left">
+	<img src="images/jh.jpg" width="20%" alt="abc" class="rounded float-right">
+	<img src="images/vg.jpg" width="20%" alt="abc" class="rounded mx-auto d-block">
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+  	$(function(){
+  		$('[data-toggle="tooltip"]').tooltip()
+  	});
+  </script>
+</html>
